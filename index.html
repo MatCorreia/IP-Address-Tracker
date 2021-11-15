@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./src/css/style.css">
+
+</head>
+
+<body>
+
+  <main>
+    <div id="bg-top">
+      <div class="bg-ip-tracker">
+        <h1>IP Address Tracker</h1>
+        <div class="row">
+          <form action="" id="search-ip-address" class="d-flex">
+            <input id="ip" type="text" placeholder="Search for any IP address or domain">
+            <button type="submit"><img src="./src/images/icon-arrow.svg" alt="Arrows"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="information">
+    <div class="row h-100">
+      <div id="search-ip" class="col-12 col-md-3 border-custom">IP Address<p>-</p>
+      </div>
+      <div id="search-location" class="col-12 col-md-3 border-custom">Location<p>-</p></div>
+      <div id="search-utc" class="col-12 col-md-3 border-custom">Timezone - UTC<p>-</p></div>
+      <div id="search-isp" class="col-12 col-md-3">ISP<p>-</p></div>
+    </div>
+
+  </section>
+
+  <section>
+    <div id="map"></div>
+  </section>
+
+  
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
